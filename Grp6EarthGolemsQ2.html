@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html>
+<title>Air Pollution</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: black;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://www.oneindia.com/img/2019/04/air-pollution-1554750051.jpg');
+  min-height: 50%;
+}
+
+/* Second image (Solution Summary) */
+.bgimg-2 {
+  background-image: url("https://static.pakwheels.com/2018/09/car-emitting-smoke-640x360.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Solution) */
+.bgimg-3 {
+  background-image: url("https://motors.mega.mu/cdn/media/news/smoke-pollution-mauritius.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button w3-hover-blue">HOME</a>
+    <a href="#solutionsummary" class="w3-bar-item w3-button w3-hide-small w3-hover-blue"><i class="fa fa-user"></i> SOLUTION SUMMARY</a>
+    <a href="#problem" class="w3-bar-item w3-button w3-hide-small w3-hover-blue"><i class="fa fa-th"></i> PROBLEM</a>
+    <a href="#solution" class="w3-bar-item w3-button w3-hide-small w3-hover-blue"><i class="fa fa-envelope"></i> SOLUTION</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-blue">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#solutionsummary" class="w3-bar-item w3-button" onclick="toggleFunction()">SOLUTION SUMMARY</a>
+    <a href="#problem" class="w3-bar-item w3-button" onclick="toggleFunction()">PROBLEM</a>
+    <a href="#solution" class="w3-bar-item w3-button" onclick="toggleFunction()">SOLUTION</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Old <span class="w3-hide-small">Cars</span> Emitting Black Smoke</span>
+  </div>
+</div>
+
+<!-- Container (Solution Summary Section) -->
+<div class="w3-content w3-container w3-padding-64" id="solutionsummary">
+  <h3 class="w3-center">SOLUTION SUMMARY</h3>
+  <p class="w3-center"><em>Old Cars Emitting Black Smoke</em></p>
+  <p>This is about the old cars that emits black smoke which is composed of carbons and other more harmful substance which is dangerous to us and to the environment.Black smoke can cause headache,lung irritation and  can worsen other lung diseases like asthma etc..This is because of the bad air filter and dirty emissions</p>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Commercial about Old Cars Emitting Black Smoke</b></p><br>
+      <iframe width="450" height="315" src="https://www.youtube.com/embed/uSXfewd4V8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>We came up with this solution because it is easy to make and many people will see I through social media.Some people watches video rather than read some articles thats why we came up with our solution which is commercial and thats why our solution is effective because it can convince people to prevent using old cars that emits black smoke.Our solution can help environment it can let people learn how to solve our problem (old cars that emits black smoke).Our solution (commercial) can lessen the air polution by encouraging people to stop using old cars.Our solution have some examples to lessen the air polution like use electic powered vehicles.</p>
+    </div>
+  </div>
+ 
+<!-- Second Parallax Image with Problem Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <center><span class="w3-xxlarge w3-text-black w3-light-gray w3-opacity">32% of the people use old cars emitting black smoke</span></center>
+  </div>
+</div>
+
+<!-- Container (Problem Section) -->
+<div class="w3-content w3-container w3-padding-64" id="problem">
+  <h3 class="w3-center">Background of the Study</h3>
+
+  <p class="w3-large w3-center w3-padding-16">1.According to Independent(2017)(Paris),"Any diesel-run vehicle showing a 'Level 5' sticker on their windscreen, which indicates they were produced from 1997 to 2000, is not allowed on the road."
+
+</p>
+
+  <p class="w3-large w3-center w3-padding-16">2.According to topgear(2014)(Philippines),"Clearly, the key to improving Metro Manila's air quality is by addressing the biggest source of pollution, which is motor vehicles," the DENR secretary pointed out. "We are therefore proposing an early implementation of the Euro 4 standards for automobile fuels and the scrapping of older high-polluting vehicles."</p>
+  
+    <p class="w3-large w3-center w3-padding-16">3.According to BBC(2018)(Madrid),"Madrid bans old cars to reduce emmisions.The oldest and most polluting vehicles are banned from the city centre.The cars with eco label will be able to drive freely and other cars will have to pay a fine of 90€."</p>
+    
+    <center><h3 style="color:black">Causes</h3></center>
+  
+  <p class="w3-center w3-wide w3-light-grey"><i class="fa fa-camera"></i>Old Cars have more dirty emissions than newer one and contains more harmful substance</p>
+  <div class="w3-light-grey">
+  </div>
+  <p class="w3-wide w3-center w3-light-grey"><i class="fa fa-laptop"></i>Old Cars doesn´t filter most of the chemicals so there´s more harmful substance</p>
+  <div class="w3-light-grey">
+  </div>
+  <p class="w3-wide w3-center w3-light-grey"><i class="fa fa-photo"></i>Old Cars use more gas than the newer one´s means they burn more fuel and produce more smoke</p>
+  <div class="w3-light-grey">
+  </div>
+</div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Problem Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+  <center><span class="w3-xxlarge w3-text-black w3-light-gray w3-opacity">Commercial About Old cars Emitting Black Smoke</span></center>
+  </div>
+</div>
+
+<!-- Container (Solution Section) -->
+<div class="w3-content w3-container w3-padding-64" id="solution">
+  <h3 class="w3-center">How does the solution works?</h3>
+  <h6 class="w3-center"><em>First We will share our commercial/video to different social media platforms and by doing this people should know the danger of black smoke to both health and environment then people will start sharing our commercial to other people and after that we expect people to reduce or stop using old diesel cars.</em></h6>
+  
+  <h3 class="w3-center">Features</h3>
+  <h6 class="w3-center"><em>In the first one we have our introduction to our topic and to our group,second is the effects and youll see the sickness you might get if you inhaled the black smoke and its effect on the environment,the third one is the possible solution,the fourth one is the additional info and some credits to the article and APA format.</em></h6>
+  
+  <h3 class="w3-center">Benefits</h3>
+  <h6 class="w3-center"><em>The benefits of our solution(commercial) it can let people know the effects like if you inhale the black smoke you will worsen your asthma it is based on the Oregon health authority and thats the effects of old cars emitting black smoke.Our solution can help lessen the air pollution by watching our commercial.Our solution is beneficial because it can help people learn our problem wich is old cars emitting black smoke in our commercial.It will help the environment because the owners of the old cars that emits black smoke will be aware.It can also prevent people from using old cars emitting black smoke </em></h6>
+  
+  <h3 class="w3-center">Early Prototype</h3>
+  
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="EarlyPrototype1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="EarlyPrototype1">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="EarlyPrototype2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="EarlyPrototype2">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="EarlyPrototype3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="EarlyPrototype3">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="EarlyPrototype4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="EarlyPrototype4">
+    </div>
+  </div>
+
+  <h3 class="w3-center">Usability Test</h3>
+  <h6 class="w3-center"><em>1.How much do you know about Old Cars Emmitting Black Smoke?<br>2. Do you know any possible solutions on Old Cars Emitting Black Smoke so we can reduce pollution?<br>3.Do you know the effects of Old Cars Emitting Black Smoke to both health  and environment?<br>4.Do you have any idea why black smoke from cars is harmful to us and to the environment?<br>5.Do you think that banning this old cars that emits black smoke is a good idea?<br>6.Do you think that our commercial can help to reduce pollution?<br>7.Can our commercial help you to understand the danger of black smoke to both health and environment?<br>8.What did you learn from our commercial which can help the environment?<br>9.What did you think about the overall appearance of the video?<br>10.Do you think that our commercial is too long to be a commercial?</em></h6>
+  
+  
+  <h3 class="w3-center">Usability Test Results</h3>
+  <h6 class="w3-center"><em>Our target particapants only know a little about Old Cars Emitting Black Smoke.They said that we can reduce the cars that are burning fossil fuels.They said that they know the effects of it to both health and environment.They said black smoke is dangerous because it contains carbon dioxide.They said that banning old cars is a good idea.One of our Target participants said maybe and the others said Yes.They said that our commercial help them understand the danger of black smoke.All of them said that they learned the effects and the danger of black smoke from our commercial.They said that our commercial is messy and need improvements.They said that our commercial is too long and it should be a minute long only or below.Our Target Participants expect all of the things in our solution.One of our Target Participants said Maybe because some doesn´t listen while the others said yes.One of our Target participants said our commercial is not enough to motivate them to lessen pollution while the others said yes.They rated our commercial 3 and 5 out of 5.</em></h6>
+  
+  <h3 class="w3-center">Latest Prototype</h3>
+  
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="LatestPrototype1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="LatestPrototype1">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="LatestPrototype2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="LatestPrototype2">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="LatestPrototype3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="LatestPrototype3">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="LatestPrototype4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="LatestPrototype4">
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="data:image/jpeg;base64,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" class="w3-image w3-round" style="width:100%">
+    </div>
+    
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> APEC Schools- Roxas Blvd. Pasay City, Philippines<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 09959314172 <br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: ap.dannleiy@apecschools.edu.ph<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="file:///home/chronos/u-9482c08155ea6e8a49e7a78a0e67c5c9fe4e9e20/MyFiles/Downloads/rose.html" title="GROUP #6-Earth Golems" target="_blank" class="w3-hover-text-blue">GROUP #6-Earth Golems</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
